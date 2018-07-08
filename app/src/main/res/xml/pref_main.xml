@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+        <ListPreference
+            android:defaultValue="4"
+            android:dialogTitle="@string/select_primary_color"
+            android:entries="@array/pref_upload_quality_entries"
+            android:entryValues="@array/pref_upload_quality_values"
+            android:key="@string/color_choice"
+            android:summary="%s"
+            android:title="@string/select_primary_color"/>
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/select_theme"
+            android:entries="@array/theme_choice_entries"
+            android:entryValues="@array/theme_choice_values"
+            android:key="@string/theme_choice"
+            android:summary="%s"
+            android:title="@string/select_theme" />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
